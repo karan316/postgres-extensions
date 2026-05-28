@@ -1,0 +1,20 @@
+services:
+  postgres:
+    build: .
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      EXTENSIONS: "pgvector,pg_trgm,pgmq,pg_cron,pg_stat_statements,pg_partman,pgcrypto,postgis,uuid-ossp,btree_gin,hstore"
+    volumes:
+      - pgdata:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:

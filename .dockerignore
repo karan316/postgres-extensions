@@ -1,0 +1,11 @@
+.git
+.github
+README.md
+LICENSE
+docker-compose.yml
+railway.toml
+.env\*
+.gitignore
+.dockerignore
+scripts/seed-data.sql
+scripts/test-queries.sql
