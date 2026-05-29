@@ -1,6 +1,6 @@
 # Postgres Extensions
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template?repo=karan316/postgres-extensions&utm_medium=integration&utm_source=button&utm_campaign=postgres-extensions)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/7gH7a-?referralCode=URrxaF&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 A production-ready **PostgreSQL 18** Docker image with **11 popular extensions** pre-installed. Enable any combination at deploy time with a single environment variable — no compilation, no extra setup.
 

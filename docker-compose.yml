@@ -1,6 +1,7 @@
 services:
   postgres:
-    build: .
+    # build: .
+    image: ghcr.io/karan316/postgres-extensions
     ports:
       - "5432:5432"
     environment:
